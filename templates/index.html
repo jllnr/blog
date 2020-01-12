@@ -1,0 +1,20 @@
+<html>
+
+<body>
+<h1>{{ title }} is working </h1>
+
+
+{% for entry in object_list %}
+
+{{entry.id}}<br/>
+<a href='/posts/{{entry.id}}/'> {{entry.title}} </a><br/>
+{{entry.content}}<br/>
+{{entry.timestamp}}<br/>
+{{entry.updated}}<br/>
+
+{% endfor %}
+
+
+</body>
+
+</html>
